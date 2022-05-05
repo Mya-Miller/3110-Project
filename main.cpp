@@ -4,7 +4,7 @@
 using namespace std;
 
 int main(){
-	CardDeck deck; // creates object of cardDeck class
+  CardDeck deck; // creates object of cardDeck class
   int winning_number; //holds the number the player want to get to
   int bet; //holds the amount the user wants to bet
   bool end_game = false, bust = false;
@@ -17,7 +17,7 @@ int main(){
   cin >> bet;
 
   deck.createDeck(); //creates deck
-	deck.shuffleDeck(); //shuffles deck
+  deck.shuffleDeck(); //shuffles deck
 
   do{
     //Menu
