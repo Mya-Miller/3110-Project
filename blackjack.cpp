@@ -7,23 +7,22 @@ int main(){
 	deck.createDeck(); //creates deck
 	deck.shuffleDeck();
 	deck.printDeck();
-	for (int i = 0; i < 5; ++i){
-	dealtCard = deck.passOut();
-	if (dealtCard == 1){
-			cout << "Dealt Card value is: A" << endl;
-		}
-		else if (dealtCard == 11){
-			cout << "Dealt Card value is: J" << endl;
-		}
-		else if (dealtCard == 12){
-			cout << "Dealt Card value is: Q" << endl;
-		}
-		else if (dealtCard == 13){
-			cout << "Dealt Card value is: K" << endl;
-		}
-		else{
-			cout << "Dealt Card value is: " << dealtCard << endl;
-		}
+	
+	vector<int> player1;
+	vector<int> dealer;
+	
+	//gives player their initial hand
+	for (int i = 0; i < 2; ++i){
+	dealtCard = deck.passOut(); // gets card from top of deck
+	deck.displayCard(dealtCard);
+	player1.push_back(dealtCard); // gives it to player 1
 	}
+	
+	for (int i = 0; i < 2; ++i){
+	dealtCard = deck.passOut(); // gets card from top of deck
+	deck.displayCard(dealtCard);
+	dealer.push_back(dealtCard); // gives it to dealer
+	}
+	
 	return 0;
 }
