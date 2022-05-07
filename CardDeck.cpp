@@ -72,3 +72,21 @@ void CardDeck::printDeck(){
 		}
 	}
 }
+
+void CardDeck::displayHand(int dealtCard){
+	if (dealtCard == 1){
+		cout << "A ";
+	}
+	else if (dealtCard == 11){
+		cout << "J ";
+	}
+	else if (dealtCard == 12){
+		cout << "Q ";
+	}
+	else if (dealtCard == 13){
+		cout << "K ";
+	}
+	else{
+		cout << dealtCard << " ";
+	}
+}
