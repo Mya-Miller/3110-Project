@@ -10,7 +10,7 @@
 using namespace std;
 
 int main(){
-	CardDeck deck; // creates object of cardDeck class
+  CardDeck deck; // creates object of cardDeck class
   HardHand h_hand;
   bettingSystem bet_sys;
 
@@ -32,7 +32,7 @@ int main(){
   bet_sys.setBetAmount(bet);
 
   deck.createDeck(); //creates deck
-	deck.shuffleDeck(); //shuffles deck
+  deck.shuffleDeck(); //shuffles deck
   
   cout << endl;
   
