@@ -6,12 +6,14 @@
 #include "CardDeck.h"
 #include "HardHand.h"
 #include "BettingSystem.h"
+#include "SoftHands.h"
 
 using namespace std;
 
 int main(){
 	CardDeck deck; // creates object of cardDeck class
   HardHand h_hand;
+  softHand sHands;
   bettingSystem bet_sys;
 
   //linked list that holds the player's cards and dealers cards
@@ -34,13 +36,13 @@ int main(){
 
   deck.createDeck(); //creates deck
   
+  players_hand.push_back(deck.passOut());
   
   cout << endl;
   while(true) { //runs forever unless user wants to end the game 
     deck.shuffleDeck(); //shuffles deck
     
     //player gets two cards initially beginning of each round
-    players_hand.push_back(deck.passOut());
     players_hand.push_back(deck.passOut());
 
     //Dealer gets two cards intially, but one card to only 
@@ -58,8 +60,10 @@ int main(){
       for (auto it = players_hand.begin(); it != players_hand.end(); ++it){
         x = *it;
         deck.displayCard(x);
+        
       }
       cout << endl;
+      
       
       //Menu
       cout << "\n1. Hit\n";
@@ -83,9 +87,19 @@ int main(){
   
           //add card to players hand
           players_hand.push_back(dealt_card);
-          
+
+        int x; 
+        for (auto it = players_hand.begin(); it != players_hand.end(); ++it){
+        x = *it;
+        sHands.checkCard(x);
+      }
           //check if their is a bust
           //if bust player loses and game ends
+          if (sHands.getTotal() > 21){
+              cout << endl << "BUST " << sHands.getTotal() << endl;
+              end_round = true;
+          }
+          
           //check if players hand == winning_number if so player wins and see if they want to 
           break;
         case 2:
