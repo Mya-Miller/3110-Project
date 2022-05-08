@@ -7,7 +7,7 @@ Mya Miller, Nazib Khan, Shellie Pham, Dang Nguyen, Emmie Abels
 1. g++ *.cpp
 2. ./a.out
 
-## Responsibilities
+## Responsibilities:
 Emmie Abels
 - CardDeck.h
 - CardDeck.cpp
