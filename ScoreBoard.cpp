@@ -79,7 +79,7 @@ void ScoreBoard::Winner(int DealerHand[], const int DealerCardCount, int PlayerH
 int NumOfWins(int DealerHand[], const int DealerCardCount, int PlayerHand[], const int PlayerCardCount)
 {
     Win = Winner(DealerHand, DealerCardCount, PlayerHand, PlayerCardCount);
-    cout << "Number of Wins is: " << win << endl;
+    cout << "Number of Wins is: " << Win << endl;
 }
 
 
