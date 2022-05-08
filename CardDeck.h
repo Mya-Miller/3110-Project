@@ -15,6 +15,5 @@ class CardDeck{
 	void shuffleDeck();
 	int passOut();
 	void displayCard(int);
-  	void displayHand(int);
 	void printDeck();
 };
