@@ -25,5 +25,5 @@ Shellie Pham
 - SoftHand.cpp
 
 Dang Nguyen
-- filename.h
-- filename.cpp
+- ScoreBoard.h
+- ScoreBoard.cpp
