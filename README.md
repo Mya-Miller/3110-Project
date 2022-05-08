@@ -8,22 +8,22 @@ Mya Miller, Nazib Khan, Shellie Pham, Dang Nguyen, Emmie Abels
 2. ./a.out
 
 ## Responsibilities
-#Emmie Abels
+Emmie Abels
 - CardDeck.h
 - CardDeck.cpp
 
-#Mya Miller
+Mya Miller
 - main.cpp
 - HardHand.cpp
 
-#Nazib Khan
+Nazib Khan
 - HardHand.h
 - HardHand.cpp
 
-#Shellie Pham
+Shellie Pham
 - SoftHand.h
 - SoftHand.cpp
 
-#Dang Nguyen
--
--
+Dang Nguyen
+- filename.h
+- filename.cpp
