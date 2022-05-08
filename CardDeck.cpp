@@ -20,37 +20,9 @@ void CardDeck::shuffleDeck(){
 }
 	
 int CardDeck::passOut(){
-	if (deck.size() == 0){
-		//cout << "Cards in deck: " << deck.size() << endl;
-		return 0;
-	}
-	else{
-		int value = deck.back(); // gets value at end of vector
-		deck.pop_back(); // removes last value from stack
-		//cout << "Cards in deck: " << deck.size() << endl;
-		return value;
-	}
-}
-
-void CardDeck::displayCard(int dealtCard){
-	if (dealtCard == 0){
-		cout << "Deck is empty." << endl;
-	}
-	if (dealtCard == 1){
-		cout << "You received: A" << endl;
-	}
-	else if (dealtCard == 11){
-		cout << "You received: J" << endl;
-	}
-	else if (dealtCard == 12){
-		cout << "You received: Q" << endl;
-	}
-	else if (dealtCard == 13){
-		cout << "You received: K" << endl;
-	}
-	else{
-		cout << "You received: " << dealtCard << endl;
-	}
+	int value = deck.back(); // gets value at end of vector
+	deck.pop_back(); // removes last value from stack
+	return value;
 }
 	
 void CardDeck::printDeck(){
@@ -73,7 +45,7 @@ void CardDeck::printDeck(){
 	}
 }
 
-void CardDeck::displayHand(int dealtCard){
+void CardDeck::displayCard(int dealtCard){
 	if (dealtCard == 1){
 		cout << "A ";
 	}
